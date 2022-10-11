@@ -1,4 +1,14 @@
 'use strict';
+
+let loader = document.getElementById("load");
+let porcentaje = document.getElementById("porcentaje-carga");
+setTimeout(() => porcentaje.innerHTML = "20%", 1000);
+setTimeout(() => porcentaje.innerHTML = "40%", 2000);
+setTimeout(() => porcentaje.innerHTML = "60%", 3000);
+setTimeout(() => porcentaje.innerHTML = "80%", 4000);
+setTimeout(() => porcentaje.innerHTML = "100%", 5000);
+setTimeout(() => loader.style.display = "none", 5500);
+
 let categorias = document.querySelector(".categorias");
 let carrito = document.querySelector(".carrito");
 let menu = document.querySelector(".menu");
@@ -96,8 +106,8 @@ function personajeAnterior(){
 function renderPersonaje(nuevo_personaje){
     console.log(nuevo_personaje);
     let nombre_personaje = document.getElementById("nombre-personaje");
-let imagen_personaje = document.getElementById("imagen-personaje");
-let descripcion_personaje= document.getElementById("descripcion-personaje");
+    let imagen_personaje = document.getElementById("imagen-personaje");
+    let descripcion_personaje= document.getElementById("descripcion-personaje");
     console.log("Renderizando imagen")
 
     nombre_personaje.innerHTML = imagenes_personajes[nuevo_personaje].Nombre;

@@ -3,6 +3,56 @@
     padding: 0%;
 }
 
+.load{
+    position: absolute;
+    text-align: center;
+    width:-webkit-fill-available;
+    height: -webkit-fill-available;
+    background-color: white;
+    z-index: 1000;
+}
+.load h2{
+    z-index: 15000;
+    color: blue;
+    font-family: Jura;
+    font-size: 50px;
+
+}
+
+#porcentaje-carga{
+    padding-top: 10%;
+
+}
+.spiner{
+    width: 150px;
+    height: 150px;
+    border-top: 5px solid blue;
+    border-right: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position:absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    z-index: 15000;
+
+}
+.spiner > div{
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 body{
     background-color: black;
 }
@@ -678,38 +728,6 @@ footer nav p{
         opacity: 1;
     }
 
-    footer nav ul li .red-facebook{
-        position: absolute;
-        width: 3%;
-        bottom: -139%;
-        right: 17%;
-        height: 30px;
-
-    }
-    footer nav ul li .red-instagram{
-        position: absolute;
-        width: 3%;
-        height: 30px;
-        bottom: -139%;
-        right: 13%;
-    }
-
-    footer nav ul li .red-twitter{
-        position: absolute;
-        width: 3%;
-        height: 30px;
-        bottom: -139%;
-        right: 9%;
-    }
-
-    footer nav ul li .red-whatsapp{
-        position: absolute;
-        width: 3%;
-        height: 30px;
-        bottom: -139%;
-        right: 5%;
-    }
-
     /* ----------------------------------Pagina juego ----------------------------- */
     h3{
         color: white;
@@ -976,6 +994,7 @@ footer nav p{
 
     .personaje{
         background-color: #403075;
+        width: 70%;
     }
 
     .personaje h2{
